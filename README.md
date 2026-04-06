@@ -128,9 +128,7 @@ BROKER --> AI
 AI --> BROKER
 BROKER --> ALERT
 ```
-
 ---
-
 # ✅ Physical / Network Topology (FIXED)
 
 ```markdown
@@ -153,3 +151,4 @@ PLC -->|Data| SCADA
 SCADA -->|MQTT Publish| MQTT
 MQTT -->|Subscribe| PY
 PY -->|Alert Publish| MQTT
+```
