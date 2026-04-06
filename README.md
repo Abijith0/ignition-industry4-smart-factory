@@ -108,7 +108,7 @@ Install dependencies:
 
 ```bash
 pip install paho-mqtt pandas numpy scikit-learn
-
+```
 ## 🧱 Logical System Architecture
 
 ```mermaid
@@ -127,3 +127,4 @@ MQTT --> BROKER
 BROKER --> AI
 AI --> BROKER
 BROKER --> ALERT
+```
