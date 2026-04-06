@@ -128,3 +128,28 @@ BROKER --> AI
 AI --> BROKER
 BROKER --> ALERT
 ```
+
+---
+
+# ✅ Physical / Network Topology (FIXED)
+
+```markdown
+## 🔌 Network Topology (Physical Setup)
+
+```mermaid
+graph TD
+
+subgraph PC1 ["🖥️ PC 1 (Control System)"]
+    PLC["PLC / Simulation"]
+end
+
+subgraph PC2 ["💻 PC 2 (SCADA + Edge)"]
+    SCADA["Ignition SCADA"]
+    MQTT["MQTT Broker (Mosquitto)"]
+    PY["Python Edge AI"]
+end
+
+PLC -->|Data| SCADA
+SCADA -->|MQTT Publish| MQTT
+MQTT -->|Subscribe| PY
+PY -->|Alert Publish| MQTT
