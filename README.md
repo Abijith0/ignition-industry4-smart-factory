@@ -128,11 +128,7 @@ BROKER --> AI
 AI --> BROKER
 BROKER --> ALERT
 ```
----
-
-```markdown
 ## 🔌 Network Topology (Physical Setup)
-
 ```mermaid
 graph TD
 
